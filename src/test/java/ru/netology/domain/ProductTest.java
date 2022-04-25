@@ -29,7 +29,7 @@ class ProductTest {
         Ticket[] expected = new Ticket[]{item4, item1};
         Ticket[] actual = manager.findAllSort("BAX", "DME");
 
-        Arrays.sort(actual);
+//        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
@@ -45,8 +45,6 @@ class ProductTest {
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.findAllSort("LED", "DME");
 
-        Arrays.sort(actual);
-
         assertArrayEquals(expected, actual);
     }
 
@@ -55,8 +53,6 @@ class ProductTest {
 
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.findAllSort("BAX", "DME");
-
-        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
@@ -71,8 +67,6 @@ class ProductTest {
 
         Ticket[] expected = new Ticket[]{};
         Ticket[] actual = manager.findAllSort("", "");
-
-        Arrays.sort(actual);
 
         assertArrayEquals(expected, actual);
     }
